@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Airsim_RC</string>
+    <string name="inp_ip">192.168.29.186</string>
+    <string name="inp_port">2222</string>
+    <string name="btn_con">Connect</string>
+    <string name="btn_wired">Connect (Wired)</string>
+    <string name="btn_wireless">Connect (Wireless)</string>
+    <string name="btn_send">Send</string>
+    <string name="inp_data">Enter the data</string>
+    <string name="btn_start_srv">Start</string>
+    <string name="btn_takeoff">TakeOff</string>
+</resources>
