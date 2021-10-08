@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/seekbar"
+    android:id="@+id/rc_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,15 +9,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="350dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginLeft="314dp"
+        android:layout_marginTop="211dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/text_throtell"
+            android:id="@+id/text_throttle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Throtell : 0"
+            android:text="Throttle : 0"
             android:textColor="#444444"
             android:textSize="20dp" />
 
@@ -48,41 +48,22 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/layout_joystick"
+        android:id="@+id/layout_joystick_right"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="36dp"
+        android:layout_marginRight="40dp"
         android:background="@drawable/image_button_bg"></RelativeLayout>
 
-    <SeekBar
-        android:id="@+id/seekbar_yaw"
-        android:layout_width="197dp"
-        android:layout_height="29dp"
+    <RelativeLayout
+        android:id="@+id/layout_joystick_left"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginBottom="300dp"
-        android:indeterminate="false"
-        android:max="50"
-        android:min="-50"
-        android:progress="0"
-        android:scrollbarSize="8dp" />
-
-    <SeekBar
-        android:id="@+id/seekbar_throtell"
-        android:layout_width="188dp"
-        android:layout_height="202dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="40dp"
-        android:layout_marginBottom="27dp"
-        android:max="50"
-        android:min="-50"
-        android:progress="0"
-        android:rotation="270"
-        android:scrollbarSize="8dp" />
+        android:background="@drawable/image_button_bg"></RelativeLayout>
 
     <Button
         android:id="@+id/btn_takeoff"
@@ -90,8 +71,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="345dp"
-        android:layout_marginTop="111dp"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="91dp"
         android:text="@string/btn_takeoff" />
 
     <Switch
@@ -100,7 +81,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="350dp"
+        android:layout_marginLeft="320dp"
         android:layout_marginTop="50dp"
         android:text="Start" />
+
+    <Switch
+        android:id="@+id/switch_lock_hgt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="299dp"
+        android:layout_marginTop="156dp"
+        android:text="Lock Hight" />
 </RelativeLayout>
