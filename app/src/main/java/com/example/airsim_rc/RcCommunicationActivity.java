@@ -56,20 +56,20 @@ public class RcCommunicationActivity extends AppCompatActivity {
         final Intent service = new Intent(this, ClientService.class);
 
         js_right = new JoyStickClass(getApplicationContext(), layout_joystick_right, R.drawable.image_button);
-        js_right.setStickSize(150, 150);
-        js_right.setLayoutSize(500, 500);
+        js_right.setStickSize(120, 120);
+        js_right.setLayoutSize(650, 650);
         js_right.setLayoutAlpha(150);
         js_right.setStickAlpha(100);
         js_right.setOffset(90);
-        js_right.setMinimumDistance(50);
+        js_right.setMinimumDistance(0);
 
         js_left = new JoyStickClass(getApplicationContext(), layout_joystick_left, R.drawable.image_button);
-        js_left.setStickSize(150, 150);
-        js_left.setLayoutSize(500, 500);
+        js_left.setStickSize(120, 120);
+        js_left.setLayoutSize(650, 650);
         js_left.setLayoutAlpha(150);
         js_left.setStickAlpha(100);
         js_left.setOffset(90);
-        js_left.setMinimumDistance(50);
+        js_left.setMinimumDistance(0);
 
         switch_start_srv.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

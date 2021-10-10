@@ -9,8 +9,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="314dp"
-        android:layout_marginTop="211dp"
+        android:layout_marginLeft="341dp"
+        android:layout_marginTop="226dp"
         android:orientation="vertical">
 
         <TextView
@@ -49,8 +49,8 @@
 
     <RelativeLayout
         android:id="@+id/layout_joystick_right"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="40dp"
@@ -58,8 +58,8 @@
 
     <RelativeLayout
         android:id="@+id/layout_joystick_left"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="40dp"
@@ -71,8 +71,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="315dp"
-        android:layout_marginTop="91dp"
+        android:layout_marginLeft="346dp"
+        android:layout_marginTop="95dp"
         android:text="@string/btn_takeoff" />
 
     <Switch
@@ -81,8 +81,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="320dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="48dp"
         android:text="Start" />
 
     <Switch
@@ -91,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="299dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginLeft="331dp"
+        android:layout_marginTop="168dp"
         android:text="Lock Hight" />
 </RelativeLayout>

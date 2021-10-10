@@ -13,7 +13,7 @@ import java.net.UnknownHostException;
 public class ClientService extends Service {
 
     public static int throtell = 0, yaw = 0, pitch = 0, roll = 0;
-    public static double rate_of_sending = 1; // in sec
+//    public static double rate_of_sending = 0.05; // in sec
     public static boolean srv_running = false, hgt_locked = false;
 
     Thread thread;
@@ -29,26 +29,20 @@ public class ClientService extends Service {
                 Log.v("[SERVICE]", "Service is started");
                 while(srv_running){
                     // send commands
-                    long futuretime = System.currentTimeMillis() + (long)(1000 * ClientService.rate_of_sending);
-                    while (System.currentTimeMillis() < futuretime){
-                        synchronized (this){
-                            try {
-                                String command = "";
-                                if(ClientService.hgt_locked){
-                                    command += "l";
-                                }
-                                command += "mv" + "@" +
-                                        Integer.toString(ClientService.throtell) + "@" +
-                                        Integer.toString(ClientService.yaw) + "@" +
-                                        Integer.toString(ClientService.pitch) + "@" +
-                                        Integer.toString(ClientService.roll);
-                                Client.send(command);
-                                Log.v("[SERVICE]", "Command Sent ..");
-                                wait(futuretime - System.currentTimeMillis());
-                            } catch (Exception e) {
-                                Log.v("[SERVICE]", "Error in sending message to server");
-                            }
+                    try {
+                        String command = "";
+                        if(ClientService.hgt_locked){
+                            command += "l";
                         }
+                        command += "mv" + "@" +
+                                Integer.toString(ClientService.throtell) + "@" +
+                                Integer.toString(ClientService.yaw) + "@" +
+                                Integer.toString(ClientService.pitch) + "@" +
+                                Integer.toString(ClientService.roll);
+                        Client.send(command);
+                        Log.v("[SERVICE]", "Command Sent ..");
+                    } catch (Exception e) {
+                        Log.v("[SERVICE]", "Error in sending message to server");
                     }
                 }
             }
