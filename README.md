@@ -31,6 +31,6 @@ Android App to control the Airsim Drone running on Remote System.
   <img src="https://github.com/AmitGupta7580/AirSim_RC/blob/master/img/rc_interface.jpeg" width=700 height=300>
 </p>
 <p align="left">
-  <img src="https://github.com/AmitGupta7580/AirSim_RC/blob/master/img/main.jpeg" width=480 height=230>
-  <img src="https://github.com/AmitGupta7580/AirSim_RC/blob/master/img/connnection.jpeg" width=480 height=230>
+  <img src="https://github.com/AmitGupta7580/AirSim_RC/blob/master/img/main.jpeg" width=380 height=200>
+  <img src="https://github.com/AmitGupta7580/AirSim_RC/blob/master/img/connnection.jpeg" width=380 height=200>
 </p>
